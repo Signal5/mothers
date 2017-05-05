@@ -1,0 +1,468 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    background: #f3f2f0 url("img/paper.jpg");
+    outline:2px solid red;
+    outline-offset:-7px;
+}
+
+#banner-336x300,
+#banner-120x600,
+#banner-728x90{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+#banner-120x600{
+    height: 100%;  
+}
+
+img{
+    position: absolute;
+    height: auto;
+}
+
+#flowers2{
+    z-index: 0;
+}
+
+#banner-336x300 #flowers1,
+#banner-728x90 #flowers1{
+  width: 139px;
+  height: 76px;
+  top: 0;
+  left: 0;
+}
+
+#banner-336x300 #flowers2,
+#banner-728x90 #flowers2{
+
+    width: 165px;
+    height: 85px;
+    bottom: 0;
+    right: 0;
+}
+
+h1{
+    font-family: 'Abril Fatface', cursive;
+    color: #ff4557;   
+}
+
+h2{
+    font-family: 'Cookie', cursive;
+    color: #3f3431;
+    font-weight: normal;
+    position: relative;
+    margin: 0;
+}
+
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+p{
+    font-family: 'PT Sans', sans-serif;
+    color: #3f3431; 
+}
+
+span{
+
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    background: #ff4557;
+    border-radius: 3px;
+    padding: 0 15px;
+    height: 31px;
+    line-height: 31px;
+    z-index: 25;
+    margin-top: 8px;
+}
+
+
+/* xxxxxxxxxxxxxxxxxxxxxx
+xxxx négyzet 336*300 xxxx
+xxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+#banner-336x300 #logo{
+    height: 20px;
+    margin: 0;
+    position: relative;
+    top: 46px;
+}
+
+
+#banner-336x300 h1{
+    font-size: 63px;
+    margin-top: 28px;
+}
+
+
+#banner-336x300 h2{
+    font-size: 42px;
+    top: 52px;
+}
+
+
+#banner-336x300 p{
+    font-size: 20px;
+}
+
+
+
+
+/* xxxxxxxxxxxxxxxxxxx
+xxxx álló 120*600 xxxx
+xxxxxxxxxxxxxxxxxxxxxx*/
+
+#banner-120x600 #flowers1{
+    width: 120px;
+    height: 64px;
+    top: 0;
+    left: 0; 
+}
+
+#banner-120x600 #flowers2{
+    width: 120px;
+    height: 62px;
+    bottom: 0;
+    right: 0; 
+}
+
+#banner-120x600 #logo{
+
+    height: 19px;
+    margin: 0;
+    position: relative;
+    top: 68px;
+}
+
+#banner-120x600 h1{
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#banner-120x600 h2{
+    font-size: 38px;
+    margin-top: 87px;
+    line-height: 31px;
+}
+
+#banner-120x600 h3{
+    
+    font-family: 'PT Sans', sans-serif;
+    color: #3f3431;
+    font-size: 16px;
+}
+
+#banner-120x600 h3 br{
+
+    content: " ";
+    display: block;
+    margin-bottom: -1px; 
+    line-height: -1px;;
+}
+
+#banner-120x600 br{
+    
+    content: " ";
+    display: block;
+    margin-bottom: -16px; 
+    line-height:16px;
+}
+
+#banner-120x600 span{
+
+    font-size: 12px;
+    padding: 0 12px;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 12px;
+}
+
+
+
+
+/* xxxxxxxxxxxxxxxxxxx
+xxxx fekvő 728*90 xxxx
+xxxxxxxxxxxxxxxxxxxxxx*/
+
+#banner-728x90 #logo{
+    height: 20px;
+    margin: 0;
+    position: absolute;
+    top: 56px;
+    left: 58px;
+}
+
+
+#banner-728x90 h2{
+    font-size: 42px;
+    position: absolute;
+    top: 13px;
+    left: 170px;
+}
+
+#banner-728x90 h1{
+    position: absolute;
+    font-size: 36px;
+    top: 8px;
+    left: 357px;
+}
+
+
+#banner-728x90 p{
+    font-size: 18px;
+    position: absolute;
+    top: 55px;
+    left: 170px;
+}
+
+#banner-728x90 span{
+
+    position: absolute;
+    font-size: 16px;
+    top: 25px;
+    left: 465px;
+}
+
+
+
+
+/* xxxxxxxxxxxxxxxxxxx
+xxxxxx animáció xxxxxx
+xxxxxxxxxxxxxxxxxxxxxx*/
+
+
+h1{
+    transform:  scale(0);
+    animation: h1scale 6s linear infinite;
+    -webkit-animation: h1scale 6s linear infinite;
+    -o-animation: h1scale 6s linear infinite;
+    -moz-animation: h1scale 6s linear infinite;
+}
+
+
+@-webkit-keyframes h1scale {
+    0%{ opacity: 0; -webkit-transform:  scale(0);}
+    25%{  opacity: 0.5; -webkit-transform:  scale(1);}
+    50%{ opacity: 1; -webkit-transform:  scale(1);}
+    75%{ opacity: 1; -webkit-transform:  scale(1);}
+    100%{ opacity: 0; -webkit-transform:  scale(0);}
+
+}
+@-o-keyframes h1scale {
+    0%{ opacity: 0; -webkit-transform:  scale(0);}
+    25%{  opacity: 0.5; -webkit-transform:  scale(1);}
+    50%{ opacity: 1; -webkit-transform:  scale(1);}
+    75%{ opacity: 1; -webkit-transform:  scale(1);}
+    100%{ opacity: 0; -webkit-transform:  scale(0);}
+}
+@-moz-keyframes h1scale {
+    0%{ opacity: 0; -webkit-transform:  scale(0);}
+    25%{  opacity: 0.5; -webkit-transform:  scale(1);}
+    50%{ opacity: 1; -webkit-transform:  scale(1);}
+    75%{ opacity: 1; -webkit-transform:  scale(1);}
+    100%{ opacity: 0; -webkit-transform:  scale(0);}
+}
+@keyframes h1scale {
+    0%{ opacity: 0; -webkit-transform:  scale(0);}
+    25%{  opacity: 0.5; -webkit-transform:  scale(1);}
+    50%{ opacity: 1; -webkit-transform:  scale(1);}
+    75%{ opacity: 1; -webkit-transform:  scale(1);}
+    100%{ opacity: 0; -webkit-transform:  scale(0);}
+}
+
+
+h2{ 
+    opacity: 0;
+    animation: fadein 3s ease 0.5s forwards;
+    -webkit-animation: fadein 3s ease 0.5s forwards;
+    -o-animation: fadein 3s ease 0.5s forwards;
+    -moz-animation: fadein 3s ease 0.5s forwards; 
+}
+
+p, h3{ 
+    opacity: 0;
+    animation: fadein 3s ease 1.5s forwards;
+    -webkit-animation: fadein 3s ease 1.5s forwards;
+    -o-animation: fadein 3s ease 1.5s forwards;
+    -moz-animation: fadein 3s ease 1.5s forwards; 
+}
+
+span{ 
+    opacity: 0;
+    animation: fadein 3s ease 2s forwards;
+    -webkit-animation: fadein 3s ease 2s forwards;
+    -o-animation: fadein 3s ease 2s forwards;
+    -moz-animation: fadein 3s ease 2s forwards; 
+}
+
+
+@-webkit-keyframes fadein {
+    0%{ opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@-o-keyframes fadein {
+    0%{ opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@-moz-keyframes fadein {
+    0%{ opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes fadein {
+    0%{ opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
+#small-flower img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    left: 10px;
+}
+
+
+
+
+#smallf1{ 
+    transform:  scale(0);
+    animation: small 3s linear infinite;
+    -webkit-animation: small 3s linear infinite;
+    -o-animation: small 3s linear infinite;
+    -moz-animation: small 3s linear infinite;
+}
+
+#smallf2{
+    transform:  scale(0);
+    animation: small 10s linear infinite;
+    -webkit-animation: small 10s linear infinite;
+    -o-animation: small 10s linear infinite;
+    -moz-animation: small 10s linear infinite;
+}
+
+#smallf3{
+    transform:  scale(0);
+    animation: small 6s linear infinite;
+    -webkit-animation: small 6s linear infinite;
+    -o-animation: small 6s linear infinite;
+    -moz-animation: small 6s linear infinite;
+}
+
+#smallf4{
+    transform:  scale(0);
+    animation: small 12s linear infinite;
+    -webkit-animation: small 12s linear infinite;
+    -o-animation: small 12s linear infinite;
+    -moz-animation: small 12s linear infinite;
+}
+
+#smallf5{
+    transform:  scale(0);
+    animation: small 3s linear infinite;
+    -webkit-animation: small 3s linear infinite;
+    -o-animation: small 3s linear infinite;
+    -moz-animation: small 3s linear infinite;
+}
+
+
+@-webkit-keyframes small {
+    0%{ margin-left: 0px; bottom: 100%; opacity: 0; transform:  scale(0);}
+    25%{ margin-left: 15px; bottom: 75%; opacity: 0.3; transform:  scale(1);}
+    50%{ margin-left: 0px; bottom: 50%; opacity: 0.7; transform:  scale(1);}
+    75%{ margin-left: 15px; bottom: 25%; opacity: 0.7; transform:  scale(1);}
+    100%{ margin-left: 0px; bottom: 0; opacity: 0; transform:  scale(0);}
+
+}
+@-o-keyframes small {
+    0%{ margin-left: 0px; bottom: 100%; opacity: 0; transform:  scale(0);}
+    25%{ margin-left: 15px; bottom: 75%; opacity: 0.3; transform:  scale(1);}
+    50%{ margin-left: 0px; bottom: 50%; opacity: 0.7; transform:  scale(1);}
+    75%{ margin-left: 15px; bottom: 25%; opacity: 0.7; transform:  scale(1);}
+    100%{ margin-left: 0px; bottom: 0; opacity: 0; transform:  scale(0);}
+}
+@-moz-keyframes small {
+    0%{ margin-left: 0px; bottom: 100%; opacity: 0; transform:  scale(0);}
+    25%{ margin-left: 15px; bottom: 75%; opacity: 0.3; transform:  scale(1);}
+    50%{ margin-left: 0px; bottom: 50%; opacity: 0.7; transform:  scale(1);}
+    75%{ margin-left: 15px; bottom: 25%; opacity: 0.7; transform:  scale(1);}
+    100%{ margin-left: 0px; bottom: 0; opacity: 0; transform:  scale(0);}
+}
+@keyframes small {
+    0%{ margin-left: 0px; bottom: 100%; opacity: 0; transform:  scale(0);}
+    25%{ margin-left: 15px; bottom: 75%; opacity: 0.3; transform:  scale(1);}
+    50%{ margin-left: 0px; bottom: 50%; opacity: 0.7; transform:  scale(1);}
+    75%{ margin-left: 15px; bottom: 25%; opacity: 0.7; transform:  scale(1);}
+    100%{ margin-left: 0px; bottom: 0; opacity: 0; transform:  scale(0);}
+}
+
+
+#banner-728x90 #smallf2{
+    transform:  scale(0);
+    animation: smallo 10s linear infinite;
+    -webkit-animation: smallo 10s linear infinite;
+    -o-animation: smallo 10s linear infinite;
+    -moz-animation: smallo 10s linear infinite;
+}
+
+#banner-728x90 #smallf3{
+    transform:  scale(0);
+    animation: smallo 6s linear infinite;
+    -webkit-animation: smallo 6s linear infinite;
+    -o-animation: smallo 6s linear infinite;
+    -moz-animation: smallo 6s linear infinite;
+}
+
+#banner-728x90 #smallf4{
+    transform:  scale(0);
+    animation: smallo 12s linear infinite;
+    -webkit-animation: smallo 12s linear infinite;
+    -o-animation: smallo 12s linear infinite;
+    -moz-animation: smallo 12s linear infinite;
+}
+
+@-webkit-keyframes smallo {
+    0%{ margin-left: 0px; top: 0; opacity: 0; transform:  scale(0);}
+    25%{ margin-left: 25%; top: 15%; opacity: 0.3; transform:  scale(1);}
+    50%{ margin-left: 50%; top: 0; opacity: 0.7; transform:  scale(1);}
+    75%{ margin-left: 75%; top: 15%; opacity: 0.7; transform:  scale(1);}
+    100%{ margin-left: 100%; top: 0; opacity: 0; transform:  scale(0);}
+}
+
+@-moz-keyframes smallo {
+    0%{ margin-left: 0px; top: 0; opacity: 0; transform:  scale(0);}
+    25%{ margin-left: 25%; top: 15%; opacity: 0.3; transform:  scale(1);}
+    50%{ margin-left: 50%; top: 0; opacity: 0.7; transform:  scale(1);}
+    75%{ margin-left: 75%; top: 15%; opacity: 0.7; transform:  scale(1);}
+    100%{ margin-left: 100%; top: 0; opacity: 0; transform:  scale(0);}
+}
+
+@-o-keyframes smallo {
+    0%{ margin-left: 0px; top: 0; opacity: 0; transform:  scale(0);}
+    25%{ margin-left: 25%; top: 15%; opacity: 0.3; transform:  scale(1);}
+    50%{ margin-left: 50%; top: 0; opacity: 0.7; transform:  scale(1);}
+    75%{ margin-left: 75%; top: 15%; opacity: 0.7; transform:  scale(1);}
+    100%{ margin-left: 100%; top: 0; opacity: 0; transform:  scale(0);}
+}
+
+@keyframes smallo {
+    0%{ margin-left: 0px; top: 0; opacity: 0; transform:  scale(0);}
+    25%{ margin-left: 25%; top: 15%; opacity: 0.3; transform:  scale(1);}
+    50%{ margin-left: 50%; top: 0; opacity: 0.7; transform:  scale(1);}
+    75%{ margin-left: 75%; top: 15%; opacity: 0.7; transform:  scale(1);}
+    100%{ margin-left: 100%; top: 0; opacity: 0; transform:  scale(0);}
+}
